@@ -1,0 +1,46 @@
+@import "./AdminDashboard.css";
+
+/* Filter Bar: one-line layout with responsive shrink */
+.filter-bar {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.filter-bar input.form-control {
+  min-width: 160px;
+  flex: 1;
+}
+
+.filter-bar .btn {
+  white-space: nowrap;
+}
+
+/* Profile photo */
+.emp-photo {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+/* Action buttons */
+.btn-group .btn {
+  margin-right: 5px;
+  padding: 4px 8px;
+}
+
+.card-header {
+  background-color: #f0f2f5;
+  font-weight: bold;
+}
+
+/* Responsive fix */
+@media (max-width: 768px) {
+  .filter-bar {
+    flex-wrap: wrap;
+  }
+}

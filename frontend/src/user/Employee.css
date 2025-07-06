@@ -1,0 +1,164 @@
+/* ===== Sidebar Styles ===== */
+.sidebar {
+  width: 220px;
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar-title {
+  color: #f39c12;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.sidebar-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 15px;
+  border-radius: 6px;
+  background-color: #34495e;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.sidebar-link:hover {
+  background-color: #3c5a7a;
+}
+
+.sidebar-logout-btn {
+  margin-top: auto;
+  padding: 12px 15px;
+  background-color: #e74c3c;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.sidebar-logout-btn:hover {
+  background-color: #c0392b;
+}
+
+/* ===== Main Content Styles ===== */
+.add-employee-main {
+  margin-left: 220px; /* matches sidebar width */
+  flex-grow: 1;
+  padding: 20px 60px 40px;
+  background: linear-gradient(135deg, #f5f6fa 0%, #e9ecef 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  overflow-y: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.add-employee-card {
+  max-width: 700px;
+  width: 100%;
+  border-radius: 14px;
+  padding: 30px 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease;
+}
+
+.add-employee-card:hover {
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+}
+
+.add-employee-title {
+  font-weight: 700;
+  color: #0d6efd;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ===== Form Input Styles ===== */
+input.form-control,
+select.form-select {
+  border-radius: 8px;
+  border: 1.5px solid #ced4da;
+  padding: 10px 14px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input.form-control:focus,
+select.form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 6px rgba(13, 110, 253, 0.4);
+  outline: none;
+}
+
+.form-label {
+  font-weight: 600;
+  text-align: right;
+  padding-right: 15px;
+}
+
+/* ===== File Preview Styles ===== */
+.preview-img {
+  max-height: 100px;
+  border-radius: 10px;
+  border: 1.5px solid #ced4da;
+  object-fit: cover;
+  display: block;
+  margin-top: 12px;
+}
+
+/* ===== Save Button ===== */
+.save-btn {
+  background: linear-gradient(45deg, #0d6efd, #084298);
+  border: none;
+  font-weight: 600;
+  font-size: 1.15rem;
+  padding: 12px 50px;
+  border-radius: 30px;
+  box-shadow: 0 6px 16px rgba(13, 110, 253, 0.5);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.save-btn:hover,
+.save-btn:focus {
+  background: linear-gradient(45deg, #084298, #062f57);
+  box-shadow: 0 8px 22px rgba(8, 66, 152, 0.7);
+  outline: none;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 576px) {
+  .add-employee-main {
+    padding: 20px;
+  }
+
+  .add-employee-card {
+    padding: 20px;
+  }
+
+  .save-btn {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .form-label {
+    text-align: left;
+    padding-right: 0;
+    margin-bottom: 5px;
+  }
+}

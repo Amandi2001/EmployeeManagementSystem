@@ -1,0 +1,75 @@
+/** EmployeeList.css */
+
+.employee-page {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #0b2144;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+.sidebar-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sidebar-header .profile-pic {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+.sidebar-nav .sidebar-link {
+  color: #fff;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.2s;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+  background-color: #172b56;
+  border-radius: 8px;
+  padding-left: 12px;
+}
+
+.sidebar-link.logout {
+  margin-top: auto;
+  background-color: #dc3545;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 30px;
+  width: 100%;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}

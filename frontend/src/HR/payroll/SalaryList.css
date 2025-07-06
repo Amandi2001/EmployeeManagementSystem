@@ -1,0 +1,151 @@
+/* Container for page */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  overflow-x: hidden;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 250px;
+  background-color: #0b2144;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.brand {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin-bottom: 40px;
+  user-select: none;
+}
+
+/* Sidebar links */
+nav .nav-item {
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+nav .nav-item:hover,
+nav .nav-item.active {
+  background-color: #172b56;
+  padding-left: 20px;
+  font-weight: 600;
+}
+
+/* Logout button */
+.logout-btn {
+  margin-top: auto;
+  background-color: #dc3545;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+  user-select: none;
+}
+
+.logout-btn:hover {
+  background-color: #b02a37;
+}
+
+/* Main content */
+.main-content {
+  margin-left: 250px; /* Same width as sidebar */
+  padding: 30px;
+  width: calc(100% - 250px);
+  box-sizing: border-box;
+  background-color: #fff;
+  min-height: 100vh;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgb(0 0 0 / 0.1);
+}
+
+/* Table responsiveness */
+.table-responsive {
+  overflow-x: auto;
+  width: 100%;
+}
+
+/* Table styling */
+.salary-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.salary-table th,
+.salary-table td {
+  border: 1px solid #dee2e6;
+  padding: 10px 12px;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.salary-table thead th {
+  background-color: #0b2144;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Loading text style */
+.loading-text {
+  margin-left: 270px;
+  padding: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0b2144;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px 15px;
+  }
+
+  .loading-text {
+    margin-left: 0;
+    padding: 20px 10px;
+  }
+}

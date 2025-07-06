@@ -1,0 +1,18 @@
+/* Panze-like style reuse */
+@import "./AdminDashboard.css";
+
+.add-employee-card {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  width: 100%;              /* Use 95% of the parent/container width */
+   max-width: 1600px; /* or 1800px if you want */     /* Increased from 1000px to 1400px */
+  margin: 30px auto;       /* Keep it centered */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+.preview-img {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 8px;
+  margin-top: 10px;
+}

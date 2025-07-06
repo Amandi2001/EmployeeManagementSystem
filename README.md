@@ -1,10 +1,10 @@
-# 🧑‍💼 Employee Management System (Spring Boot + React)
+#  Employee Management System (Spring Boot + React)
 
 A full-stack role-based employee management system built using **Spring Boot** (backend) and **React.js** (frontend). The system is designed for organizations to manage employees, HR activities, attendance, leaves, and payrolls efficiently.
 
 ---
 
-## 🔐 Role-Based Access
+##  Role-Based Access
 
 | Role      | Permissions |
 |-----------|-------------|
@@ -14,19 +14,19 @@ A full-stack role-based employee management system built using **Spring Boot** (
 
 ---
 
-## 🎯 Features
+##  Features
 
-### 🔒 Authentication
+###  Authentication
 - Role-based login system with database-based credentials.
 
-### 👨‍💼 Admin / HR Panel
+###  Admin / HR Panel
 - Add, view, edit, and delete **employees**
 - Manage **users** (admin only)
 - Handle **leave requests**
 - Mark and update **attendance**
 - Manage **monthly payroll**
 
-### 👷‍♂️ Employee Panel
+###  Employee Panel
 - View personal **profile**
 - Send **attendance correction requests**
 - Apply for **leave**
@@ -34,7 +34,7 @@ A full-stack role-based employee management system built using **Spring Boot** (
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Backend (Spring Boot)
 - Java 17

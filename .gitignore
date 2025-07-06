@@ -1,0 +1,12 @@
+# Ignore node_modules and build files
+/frontend/node_modules
+/frontend/build
+/backend/target
+
+# IDE and OS files
+*.log
+.DS_Store
+*.class
+*.iml
+.idea/
+*.env
